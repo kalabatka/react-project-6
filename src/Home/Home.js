@@ -1,4 +1,12 @@
 import React from "react";
+import Dates from "./Dates";
+
+
+
+
+
+
+
 
 const Home = () => {
 
@@ -10,8 +18,30 @@ const Home = () => {
                 <p>Описание домашней страницы</p>
         </div>
 
+        
+
     );
 
+return(
+<div><button>
+  <Dates />
+  </button>
+  </div>
+
+);
+
+
 };
+
+
+
+
+
+
+
+
+
+
+
 
 export default Home;
