@@ -1,12 +1,7 @@
 import React from "react";
-import Dates from "./Dates";
-
-
-
-
-
-
-
+import Dat_time from "./Dat_time";
+import UserAgentInfo from "./UserAgentInfo";
+import "./Home.css";
 
 const Home = () => {
 
@@ -16,32 +11,9 @@ const Home = () => {
                 Это главная страница
                 </p>
                 <p>Описание домашней страницы</p>
+                <button className="date-time-container"><Dat_time /></button>
+                <div><UserAgentInfo /></div>
         </div>
-
-        
-
     );
-
-return(
-<div><button>
-  <Dates />
-  </button>
-  </div>
-
-);
-
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
 export default Home;

@@ -1,4 +1,4 @@
-import {Router, Routes, Route} from "react-router";
+import { Routes, Route} from "react-router";
 import {Link} from "react-router-dom";
 import './App.css';
 import Home from './Home/Home';
