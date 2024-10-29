@@ -2,7 +2,7 @@ import React from "react";
 import { useState} from 'react';
 
 
-function  Dat_time() {
+function  DatTime() {
     let [date, setDate] = useState(() => {
       const date = new Date(); // Создаем дату
       const month = (date.getMonth()+1).toString(); // Получаем месяц
@@ -18,4 +18,4 @@ function  Dat_time() {
       </div>
     );
   };
-  export default Dat_time;
+  export default DatTime;

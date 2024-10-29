@@ -7,6 +7,15 @@
 
 .date-time-container {
 border: 2px solid rgb(32, 5, 150);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 10px;
+}
+
+.user-agentInfo-container {
+border: 2px solid rgb(32, 5, 150);
 border-radius: 10px;
 display: flex;
 justify-content: center;

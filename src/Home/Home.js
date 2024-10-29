@@ -1,6 +1,7 @@
 import React from "react";
-import Dat_time from "./Dat_time";
+import DatTime from "./DatTime";
 import UserAgentInfo from "./UserAgentInfo";
+import ViewportInfo from "./ViewportInfo";
 import "./Home.css";
 
 const Home = () => {
@@ -10,10 +11,17 @@ const Home = () => {
             <p className="home-page-container_head-text">
                 Это главная страница
                 </p>
-                <p>Описание домашней страницы</p>
-                <button className="date-time-container"><Dat_time /></button>
-                <div><UserAgentInfo /></div>
+                <button className="date-time-container"><DatTime /></button>
+                <button className="user-agentInfo-container"><p>browser information</p><UserAgentInfo/></button>
+                <button><ViewportInfo/></button>
         </div>
+
+
     );
+
 };
+
+
+
+
 export default Home;
