@@ -1,16 +1,19 @@
 import React from "react";
 
-const Close = () => {
 
-    return (
-        <div className="close-page-container container">
-            <p className="close-page-container_head-text">
-                Это страница с кнопкой "Закрыть"
-                </p>
-        </div>
 
-    );
 
-};
 
+
+
+
+ class Close extends React.Component {
+    onclick () {
+      window.location.assign('http://localhost:3000');
+    }
+
+    render() {
+      return (<button className="new-page-container" onClick={(e) => this.onclick(e)}>close</button>);
+    }
+  }
 export default Close;

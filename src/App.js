@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Close from './Close/Close';
 import Open from './Open/Open';
 import Redirect from './Redirect/Redirect';
+import New from './New/New';
 import "./styles.css"
 
 
@@ -27,6 +28,9 @@ import "./styles.css"
               </div>
               <div className="navigation-menu-part">
                 <Link to="/home">Вернуться</Link>
+                </div>
+                <div className="navigation-menu-part">
+                <Link to="/new">Новая</Link>
               </div>
             </div>
           </nav>
@@ -36,6 +40,7 @@ import "./styles.css"
         <Route path="/close" element={<Close />} />
         <Route path="/open" element={<Open />} />
         <Route path="/home" element={<Redirect />} />
+        <Route path="/new" element={<New />} />
         </Routes>
 
     </div>

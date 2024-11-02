@@ -1,16 +1,19 @@
 import React from "react";
+import "./Open.css";
 
-const Open = () => {
 
-    return (
-        <div className="open-page-container container">
-            <p className="open-page-container_head-text">
-                Это страница с кнопкой "Открыть"
-                </p>
-        </div>
 
-    );
 
-};
 
+
+
+ class Open extends React.Component {
+    onclick () {
+      window.location.assign('http://localhost:3000/new');
+    }
+
+    render() {
+      return (<button className="new-page-container" onClick={(e) => this.onclick(e)}>new</button>);
+    }
+  }
 export default Open;
